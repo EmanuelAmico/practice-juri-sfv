@@ -17,7 +17,9 @@ html{
 }
 :root{
     --alto-del-navbar: 7vh;
-    --alto-de-las-secciones: 100vh;
+    --alto-de-la-primera-seccion: 93vh;
+    --alto-de-las-demas-secciones: 100vh;
+    --top-de-las-secciones: 7vh;
 }
 body{
     background-color: gray;
@@ -31,6 +33,7 @@ nav{
     position: fixed;
     top:0px;
     width: 100%;
+    z-index: 2;
 }
 nav a{
     font-size: 1.9rem;
@@ -40,42 +43,47 @@ nav a{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 2rem;
-    transition: opacity 0.5s;
+    transition: opacity 0.25s;
 }
 nav a:hover{
     opacity: 0.7;
 }
 .navigation1{
-    height:var(--alto-de-las-secciones);
+    height:var(--alto-de-la-primera-seccion);
     background-image: url("../img/intro-sin-texto.jpg");
     background-size: cover;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    top: var(--top-de-las-secciones);
 }
 .navigation2{
-    height:var(--alto-de-las-secciones);
+    height:var(--alto-de-las-demas-secciones);
     background-image: url("../img/fondo\ \(20\).jpg");
     background-size: cover;
 }
 .navigation3{
-    height:var(--alto-de-las-secciones);
+    height:var(--alto-de-las-demas-secciones);
     background-image: url("../img/fondo\ \(4\).jpg");
     background-size: cover;
 }
 .navigation4{
-    height:var(--alto-de-las-secciones);
+    height:var(--alto-de-las-demas-secciones);
     background-image: url("../img/fondo\ \(7\).jpg");
     background-size: cover;
 }
 .navigation5{
-    height:var(--alto-de-las-secciones);
+    height:var(--alto-de-las-demas-secciones);
     background-image: url("../img/fondo\ \(21\).jpg");
     background-size: cover;
 }
 @media (max-width: 1280px){
     :root{
         --alto-del-navbar: 10vh;
+        --alto-de-la-primera-seccion: 90vh;
+        --alto-de-las-secciones: 100vh;
+        --top-de-las-secciones: 10vh;
     }
 }
 .rectangulo{
