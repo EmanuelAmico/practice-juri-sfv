@@ -1,5 +1,9 @@
 /*Uso de rem, unidades relativas, reseteo genérico, scroll smooth al nav
 uso de variables, responsive y media query*/
+@font-face{
+    font-family: Eurostile;
+    src: url("../assets/fonts/Eurostile.ttf");
+}
 *{
     padding: 0px;
     margin: 0px;
