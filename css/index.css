@@ -1,0 +1,124 @@
+/*Uso de rem, unidades relativas, reseteo genérico, scroll smooth al nav
+uso de variables, responsive y media query*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Eurostile;
+}
+html{
+    font-size: 62.5%;
+    /*1 rem = 10px*/ 
+}
+:root{
+    --alto-del-navbar: 7vh;
+    --alto-de-las-secciones: 100vh;
+}
+body{
+    background-color: gray;
+}
+nav{
+    height: var(--alto-del-navbar);
+    background-image: linear-gradient(rgba(77,57,81,1),rgba(92,61,135,1));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top:0px;
+    width: 100%;
+}
+nav a{
+    font-size: 1.9rem;
+    font-weight: bold;
+    background: -webkit-linear-gradient(rgba(248,248,248,1),rgba(248,248,248,0));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 2rem;
+    transition: opacity 0.5s;
+}
+nav a:hover{
+    opacity: 0.7;
+}
+.navigation1{
+    height:var(--alto-de-las-secciones);
+    background-image: url("../img/intro-sin-texto.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation2{
+    height:var(--alto-de-las-secciones);
+    background-image: url("../img/fondo\ \(20\).jpg");
+    background-size: cover;
+}
+.navigation3{
+    height:var(--alto-de-las-secciones);
+    background-image: url("../img/fondo\ \(4\).jpg");
+    background-size: cover;
+}
+.navigation4{
+    height:var(--alto-de-las-secciones);
+    background-image: url("../img/fondo\ \(7\).jpg");
+    background-size: cover;
+}
+.navigation5{
+    height:var(--alto-de-las-secciones);
+    background-image: url("../img/fondo\ \(21\).jpg");
+    background-size: cover;
+}
+@media (max-width: 1280px){
+    :root{
+        --alto-del-navbar: 10vh;
+    }
+}
+.rectangulo{
+    height: 40vh;
+    width: 35%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rectangulo:before{
+    content: ""; 
+    height: 0px; 
+    width: 0px; 
+    border-top: 20vh solid transparent; 
+    border-left: 20vh solid transparent; 
+    border-right: 20vh solid  rgba(0, 0, 0, 0.5); 
+    border-bottom: 20vh solid  rgba(0, 0, 0, 0.5);
+    position: absolute;
+    right: 34.5vw; 
+} 
+.rectangulo h2{
+    font-size: 4.6vw;
+    font-style: italic;
+    color: rgba(248,248,248,0.85)
+}
+.rectangulo2{
+    height: 40vh;
+    width: 20%;
+    background-color:rgba(0, 0, 0, 0.5);;
+    align-self: flex-end;
+}
+.rectangulo2:before{
+    content: ""; 
+    height: 0px; 
+    width: 0px; 
+    border-top: 20vh solid transparent; 
+    border-left: 20vh solid transparent; 
+    border-right: 20vh solid  rgba(0, 0, 0, 0.5);
+    border-bottom: 20vh solid  rgba(0, 0, 0, 0.5);
+    position: absolute;
+    right: 125.76713374095596265078711439855396747589111329vh;
+    transform: scaleX(-1); 
+} 
+.logosfv{
+    width: 100%;
+    opacity: 1;
+}
+/* Poner flex wrap al nav en el mobile*/
