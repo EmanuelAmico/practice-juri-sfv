@@ -17,8 +17,11 @@ html{
 }
 :root{
     --alto-del-navbar: 7vh;
-    --alto-de-la-primera-seccion: 93vh;
-    --alto-de-las-demas-secciones: 100vh;
+    --alto-primer-seccion: 93vh;
+    --alto-segunda-seccion: 93vh;
+    --alto-tercer-seccion: 93vh;
+    --alto-cuarta-seccion: 93vh;
+    --alto-quinta-seccion: 93vh;
     --top-de-las-secciones: 7vh;
 }
 body{
@@ -49,7 +52,7 @@ nav a:hover{
     opacity: 0.7;
 }
 .navigation1{
-    height:var(--alto-de-la-primera-seccion);
+    height:var(--alto-primer-seccion);
     background-image: url("../img/intro-sin-texto.jpg");
     background-size: cover;
     display: flex;
@@ -59,30 +62,41 @@ nav a:hover{
     top: var(--top-de-las-secciones);
 }
 .navigation2{
-    height:var(--alto-de-las-demas-secciones);
+    height:var(--alto-segunda-seccion);
     background-image: url("../img/fondo\ \(20\).jpg");
     background-size: cover;
+    position: relative;
+    top: var(--top-de-las-secciones);
 }
 .navigation3{
-    height:var(--alto-de-las-demas-secciones);
+    height:var(--alto-tercer-seccion);
     background-image: url("../img/fondo\ \(4\).jpg");
     background-size: cover;
+    position: relative;
+    top: var(--top-de-las-secciones);
 }
 .navigation4{
-    height:var(--alto-de-las-demas-secciones);
+    height:var(--alto-cuarta-seccion);
     background-image: url("../img/fondo\ \(7\).jpg");
     background-size: cover;
+    position: relative;
+    top: var(--top-de-las-secciones);
 }
 .navigation5{
-    height:var(--alto-de-las-demas-secciones);
+    height:var(--alto-quinta-seccion);
     background-image: url("../img/fondo\ \(21\).jpg");
     background-size: cover;
+    position: relative;
+    top: var(--top-de-las-secciones);
 }
 @media (max-width: 1280px){
     :root{
         --alto-del-navbar: 10vh;
-        --alto-de-la-primera-seccion: 90vh;
-        --alto-de-las-secciones: 100vh;
+        --alto-primer-seccion: 90vh;
+        --alto-segunda-seccion: 90vh;
+        --alto-tercer-seccion: 90vh;
+        --alto-cuarta-seccion: 90vh;
+        --alto-quinta-seccion: 90vh;
         --top-de-las-secciones: 10vh;
     }
 }
