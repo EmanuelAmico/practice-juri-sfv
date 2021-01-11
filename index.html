@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juri - Street Fighter V</title>
+    <title>Juri Han - Street Fighter V</title>
     <link rel="shortcut icon" href="img/icon/icono-pestaña.png" />
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <header id="navigation1">
+    <header>
         <nav class="navbar">
             <a href="#navigation1">NAVIGATION1</a>
             <a href="#navigation2">NAVIGATION2</a>
@@ -17,7 +17,7 @@
             <a href="#navigation5">NAVIGATION5</a>
         </nav>
     </header>
-    <!--(sect.NAVIGATION$>a[name="NAVIGATION$"])*5-->
+    <div id="navigation1"></div>
     <section class="navigation1">
         <div class="rectangulo-logo">
             <img src="img/icon/Street_Fighter_V_-_logotipo.png" alt="logo sfv" class="logosfv">
@@ -27,10 +27,18 @@
                 <h2>JURI...</h2>
         </div>
     </section>
-    <section class="navigation2" id="navigation2"></section>
-    <section class="navigation3" id="navigation3"></section>
-    <section class="navigation4" id="navigation4"></section>
-    <section class="navigation5" id="navigation5"></section>
+    <!--Usando div's al principio de c/seccion como internal links 
+    le digo al nav que vaya al principio de la anterior seccion -->
+    <div id="navigation2"></div>
+    <section class="navigation2"></section>
+    <div id="navigation3"></div>
+    <section class="navigation3"></section>
+    <div id="navigation4"></div>
+    <section class="navigation4"></section>
+    <div id="navigation5"></div>
+    <section class="navigation5"></section>
 
 </body>
 </html>
+
+<!--(sect.NAVIGATION$>a[name="NAVIGATION$"])*5-->
