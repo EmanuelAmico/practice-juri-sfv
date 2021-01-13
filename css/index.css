@@ -1,5 +1,6 @@
 /*Uso de rem, unidades relativas, reseteo genérico, scroll smooth al nav
 uso de variables, position fixed and relative, responsive y media query*/
+/*--------------------RESET------------------------*/
 @font-face{
     font-family: Eurostile;
     src: url("../assets/fonts/Eurostile.ttf");
@@ -11,10 +12,12 @@ uso de variables, position fixed and relative, responsive y media query*/
     scroll-behavior: smooth;
     font-family: Eurostile;
 }
+/*--------------------PARA EL RESPONSIVE------------------------*/
 html{
     font-size: 62.5%;
     /*1 rem = 10px*/ 
 }
+/*--------------------VARIABLES------------------------*/
 :root{
     --alto-del-navbar: 7vh;
     --alto-primer-seccion: 93vh;
@@ -24,6 +27,7 @@ html{
     --alto-quinta-seccion: 93vh;
     --top-de-las-secciones: 7vh;
 }
+/*--------------MAQUETADO PRINCIPAL---------------------*/
 .flex-row{
     display: flex;
     justify-content: center;
@@ -100,64 +104,7 @@ nav a:hover{
     position: relative;
     top: var(--top-de-las-secciones);
 }
-@media (max-width: 1280px){
-    :root{
-        --alto-del-navbar: 10vh;
-        --alto-primer-seccion: 90vh;
-        --alto-segunda-seccion: 90vh;
-        --alto-tercer-seccion: 90vh;
-        --alto-cuarta-seccion: 90vh;
-        --alto-quinta-seccion: 90vh;
-        --top-de-las-secciones: 10vh;
-    }
-    /*Empiezo a diseñar patada/piña debil/media/fuerte*/
-    .pagina-blanca{
-        height: 90vh;
-        position: relative;
-        top: 10vh;
-        background-color: gainsboro;
-        border: 4px solid red;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .pina-debil{
-        width: 10rem;
-        height: 5rem;
-        display: flex;
-        /* El after y el before son dos pseudoclases 
-        que insertan en el html en este caso dos elementos de linea
-        con el content: "" (texto) y el content: url() 
-        (que seria el <img>), ambos elementos serían
-        hijos de pina-debil, un elemento mostrado antes y uno 
-        despues. Al poner display:flex convierto a todos
-        los hijos que eran de tipo linea en bloques*/
-        justify-content: center;
-        align-items: center;
-        background-color: blue;
-        border-radius: 30%;
-    }
-    .pina-debil::before{
-        width: 100%;
-        height: 100%;
-        content: "";
-        background: url("/img/icon/command-buttons/punch.gif") no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-    .pina-debil::after{
-        width: 100%;
-        height: 100%;
-        content: "L";
-        font-size: 4rem;
-        font-weight: bold;
-        background-color: blue;
-        text-align: center;
-        border-radius: 35%;
-    }
-    /*Termino de diseñar patada/piña debil/media/fuerte*/
-}
+/*--------------------PRIMERA SECCIÓN------------------------*/
 .rectangulo-logo{
     border: 4px solid blue;
     background-image: url("../img/svg/rectangulo-triangulo-logo.svg");
@@ -183,6 +130,80 @@ nav a:hover{
     margin: auto;
     position: relative;
     left: 5vw;
+}
+/*--------------------BOTONES------------------------*/
+/*Pagina en blanco para diseño de botones*/
+.pagina-blanca{
+    height: 93vh;
+    position: relative;
+    top: 7vh;
+    background-color: gainsboro;
+    border: 4px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*--------------------------------------------------*/
+/* El after y el before son dos pseudoclases 
+    que insertan en el html en este caso dos elementos de linea
+    con el content: "" (texto) y el content: url() 
+    (que seria el <img>), ambos elementos serían
+    hijos de pina-debil, un elemento mostrado antes y uno 
+    despues. Al poner display:flex convierto a todos
+    los hijos que eran de tipo linea en bloques*/
+/*--------------------------------------------------*/
+.golpe-debil{
+    width: 10rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    border-radius: 30%;
+}
+.golpe-debil::before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url("/img/icon/command-buttons/punch.gif") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.golpe-debil::after{
+    width: 100%;
+    height: 100%;
+    content: "L";
+    font-size: 4rem;
+    font-weight: bold;
+    background-color: blue;
+    text-align: center;
+    border-radius: 35%;
+}
+/*--------------------RESPONSIVE----------------------*/
+@media (max-width: 1280px){
+    :root{
+        --alto-del-navbar: 10vh;
+        --alto-primer-seccion: 90vh;
+        --alto-segunda-seccion: 90vh;
+        --alto-tercer-seccion: 90vh;
+        --alto-cuarta-seccion: 90vh;
+        --alto-quinta-seccion: 90vh;
+        --top-de-las-secciones: 10vh;
+    }
+    /*Pagina en blanco para diseño de botones*/
+    .pagina-blanca{
+        height: 90vh;
+        position: relative;
+        top: 10vh;
+        background-color: gainsboro;
+        border: 4px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /*Pagina en blanco para diseño de botones*/
 }
 /* Poner flex wrap al nav en el mobile en el responsive*/
 
