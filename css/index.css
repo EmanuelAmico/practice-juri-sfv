@@ -209,6 +209,12 @@ nav a:hover{
     nav{
         flex-wrap: wrap;
     }
+    .pagina-blanca{
+        justify-content: flex-end;
+    }
+    .golpe-debil{
+        margin: 1rem;
+    }
 }
 /* Poner flex wrap al nav en el mobile en el responsive*/
 
