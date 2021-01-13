@@ -117,10 +117,14 @@ nav a:hover{
         top: 10vh;
         background-color: gainsboro;
         border: 4px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .pina-debil{
-        width: 10.3rem;
-        border: 4px dotted black;
+        width: 10rem;
+        height: 5rem;
         display: flex;
         /* El after y el before son dos pseudoclases 
         que insertan en el html en este caso dos elementos de linea
@@ -131,17 +135,26 @@ nav a:hover{
         los hijos que eran de tipo linea en bloques*/
         justify-content: center;
         align-items: center;
+        background-color: blue;
+        border-radius: 30%;
     }
     .pina-debil::before{
-        content: url("/img/icon/command-buttons/punch.gif");
-        width: 4.5rem;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: url("/img/icon/command-buttons/punch.gif") no-repeat;
+        background-position: center;
+        background-size: cover;
     }
     .pina-debil::after{
+        width: 100%;
+        height: 100%;
         content: "L";
-        text-align: center;
-        font-size: 5.3rem;
+        font-size: 4rem;
+        font-weight: bold;
         background-color: blue;
-        width: 5.3rem;
+        text-align: center;
+        border-radius: 35%;
     }
     /*Termino de diseñar patada/piña debil/media/fuerte*/
 }
