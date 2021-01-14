@@ -166,7 +166,7 @@ nav a:hover{
     width: 100%;
     height: 100%;
     content: "";
-    background: url("/img/icon/command-buttons/punch.gif") no-repeat;
+    background: url("../img/icon/command-buttons/punch.gif") no-repeat;
     background-position: center;
     background-size: cover;
 }
