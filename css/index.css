@@ -153,6 +153,9 @@ nav a:hover{
     despues. Al poner display:flex convierto a todos
     los hijos que eran de tipo linea en bloques*/
 /*--------------------------------------------------*/
+.margin-2rem{
+    margin: 2rem;
+}
 .golpe-debil{
     width: 10rem;
     height: 5rem;
@@ -161,6 +164,7 @@ nav a:hover{
     align-items: center;
     background-color: blue;
     border-radius: 30%;
+    border-style: solid;
 }
 .golpe-debil::before{
     width: 100%;
@@ -174,12 +178,156 @@ nav a:hover{
     width: 100%;
     height: 100%;
     content: "L";
+    color: black;
     font-size: 4rem;
     font-weight: bold;
     background-color: blue;
     text-align: center;
     border-radius: 35%;
 }
+.golpe-medio{
+    width: 10rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    border-radius: 30%;
+    border-style: solid;
+}
+.golpe-medio::before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url("../img/icon/command-buttons/punch.gif") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.golpe-medio::after{
+    width: 100%;
+    height: 100%;
+    content: "M";
+    color: black;
+    font-size: 4rem;
+    font-weight: bold;
+    background-color: yellow;
+    text-align: center;
+    border-radius: 35%;
+}
+.golpe-fuerte{
+    width: 10rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border-radius: 30%;
+    border-style: solid;
+}
+.golpe-fuerte::before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url("../img/icon/command-buttons/punch.gif") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.golpe-fuerte::after{
+    width: 100%;
+    height: 100%;
+    content: "H";
+    color: black;
+    font-size: 4rem;
+    font-weight: bold;
+    background-color: red;
+    text-align: center;
+    border-radius: 35%;
+}
+.patada-debil{
+    width: 10rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    border-radius: 30%;
+    border-style: solid;
+}
+.patada-debil::before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url("../img/icon/command-buttons/kick.gif") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.patada-debil::after{
+    width: 100%;
+    height: 100%;
+    content: "L";
+    font-size: 4rem;
+    font-weight: bold;
+    background-color: blue;
+    text-align: center;
+    border-radius: 35%;
+}
+.patada-media{
+    width: 10rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    border-radius: 30%;
+    border-style: solid;
+}
+.patada-media::before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url("../img/icon/command-buttons/kick.gif") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.patada-media::after{
+    width: 100%;
+    height: 100%;
+    content: "M";
+    font-size: 4rem;
+    font-weight: bold;
+    background-color: yellow;
+    text-align: center;
+    border-radius: 35%;
+}
+.patada-fuerte{
+    width: 10rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border-radius: 30%;
+    border-style: solid;
+}
+.patada-fuerte::before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url("../img/icon/command-buttons/kick.gif") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.patada-fuerte::after{
+    width: 100%;
+    height: 100%;
+    content: "H";
+    font-size: 4rem;
+    font-weight: bold;
+    background-color: red;
+    text-align: center;
+    border-radius: 35%;
+}
+
 /*---------------RESPONSIVE DESKTOP----------------------*/
 @media (max-width: 1280px){
     :root{
