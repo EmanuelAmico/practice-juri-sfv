@@ -153,9 +153,6 @@ nav a:hover{
     despues. Al poner display:flex convierto a todos
     los hijos que eran de tipo linea en bloques*/
 /*--------------------------------------------------*/
-.margin-2rem{
-    margin: 2rem;
-}
 .golpe-debil{
     width: 10rem;
     height: 5rem;
@@ -359,10 +356,7 @@ nav a:hover{
     }
     .pagina-blanca{
         justify-content: flex-end;
-    }
-    .golpe-debil{
-        margin: 1rem;
-    }
+    }  
 }
 /* Poner flex wrap al nav en el mobile en el responsive*/
 
