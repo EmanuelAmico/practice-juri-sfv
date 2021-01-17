@@ -141,7 +141,7 @@ nav a:hover{
     border: 4px solid red;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 /*--------------------------------------------------*/
@@ -324,7 +324,40 @@ nav a:hover{
     text-align: center;
     border-radius: 35%;
 }
-
+/*---------------MOVELIST----------------------*/
+.movelist{
+    width: 117rem;
+    border: 4px solid purple;
+}
+.portrait{
+    height: 21rem;
+    background: url("../img/icon/command-buttons/movelist-juri.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.portrait h2{
+    color: white;
+    font-size: 5rem;
+    padding: 1rem;
+}
+.tipo-movimiento{
+    font-size: 2.5rem;
+    text-align: start;
+    background-color: blue;
+    color: white;
+}
+.fila-movimiento{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    border: 1px solid black;
+}
+.fila-movimiento h3{
+    background-color: wheat;
+    
+}
 /*---------------RESPONSIVE DESKTOP----------------------*/
 @media (max-width: 1280px){
     :root{
@@ -345,7 +378,7 @@ nav a:hover{
         border: 4px solid red;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
     }
 }
