@@ -184,7 +184,7 @@ nav a:hover{
     color: var(--color-botones-letra);
     font-size: var(--fontsize-botones);
     font-weight: bold;
-    background-color: ;
+    background-color: var(--color-botones-debiles);
     text-align: center;
     border-radius: 35%;
 }
