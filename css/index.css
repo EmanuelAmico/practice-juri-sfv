@@ -150,13 +150,18 @@ nav a:hover{
     despues. Al poner display:flex convierto a todos
     los hijos que eran de tipo linea en bloques*/
 /*--------------------------------------------------*/
+:root{
+    --color-botones-debiles: blue;
+    --color-botones-medios: yellow;
+    --color-botones-fuertes: red;
+}
 .golpe-debil{
     width: 7.5rem;
     height: 3.75rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    background-color: var(--color-botones-debiles);
     border-radius: 30%;
     border-style: solid;
 }
@@ -175,7 +180,7 @@ nav a:hover{
     color: black;
     font-size: 3rem;
     font-weight: bold;
-    background-color: blue;
+    background-color: ;
     text-align: center;
     border-radius: 35%;
 }
@@ -185,7 +190,7 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: yellow;
+    background-color: var(--color-botones-medios);
     border-radius: 30%;
     border-style: solid;
 }
@@ -204,7 +209,7 @@ nav a:hover{
     color: black;
     font-size: 3rem;
     font-weight: bold;
-    background-color: yellow;
+    background-color: var(--color-botones-medios);
     text-align: center;
     border-radius: 35%;
 }
@@ -214,7 +219,7 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: var(--color-botones-fuertes);
     border-radius: 30%;
     border-style: solid;
 }
@@ -233,7 +238,7 @@ nav a:hover{
     color: black;
     font-size: 3rem;
     font-weight: bold;
-    background-color: red;
+    background-color: var(--color-botones-fuertes);
     text-align: center;
     border-radius: 35%;
 }
@@ -243,7 +248,7 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    background-color: var(--color-botones-debiles);
     border-radius: 30%;
     border-style: solid;
 }
@@ -261,7 +266,7 @@ nav a:hover{
     content: "L";
     font-size: 3rem;
     font-weight: bold;
-    background-color: blue;
+    background-color: var(--color-botones-debiles);
     text-align: center;
     border-radius: 35%;
 }
@@ -271,7 +276,7 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: yellow;
+    background-color: var(--color-botones-medios);
     border-radius: 30%;
     border-style: solid;
 }
@@ -289,7 +294,7 @@ nav a:hover{
     content: "M";
     font-size: 3rem;
     font-weight: bold;
-    background-color: yellow;
+    background-color: var(--color-botones-medios);
     text-align: center;
     border-radius: 35%;
 }
@@ -299,7 +304,7 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: var(--color-botones-fuertes);
     border-radius: 30%;
     border-style: solid;
 }
@@ -317,7 +322,7 @@ nav a:hover{
     content: "H";
     font-size: 3rem;
     font-weight: bold;
-    background-color: red;
+    background-color: var(--color-botones-fuertes);
     text-align: center;
     border-radius: 35%;
 }
