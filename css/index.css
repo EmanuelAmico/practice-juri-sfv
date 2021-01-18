@@ -348,46 +348,49 @@ nav a:hover{
 .movelist-entero{
     display: flex;
 }
-.agarres-normales-ca{
+.tipo-movimiento{
     width: 100%;
+}
+.tipo-movimiento h2{
+    font-size: 2.5rem;
+    text-align: center;
+    background-color: gray;
+    color: white;
 }
 .agarres-normales-ca h2{
-    font-size: 2.5rem;
-    text-align: center;
     background-color: blue;
-    color: white;
-}
-.v-system{
-    width: 100%;
 }
 .v-system h2{
-    font-size: 2.5rem;
-    text-align: center;
     background-color: orange;
-    color: white;
-}
-.unicos-especiales{
-    width: 100%;
 }
 .unicos-especiales h2{
-    font-size: 2.5rem;
-    text-align: center;
     background-color: darkred;
-    color: white;
 }
 .movimiento-y-comandos{
-    height: 4.5rem;
     display: flex;
     align-items: center;
     font-size: 2rem;
 }
-.movimiento-y-comandos img{
-    background-color: wheat;
-}
 .movimiento{
     width: 33%;
     background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.movimiento img{
+    width: 3.7rem;
+}
+.movimiento h3{
+    width: 100%;
     text-align: center;
+}
+.movimiento div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 .comandos{
     display: flex;
