@@ -151,9 +151,10 @@ nav a:hover{
     los hijos que eran de tipo linea en bloques*/
 /*--------------------------------------------------*/
 :root{
-    --color-botones-debiles: blue;
-    --color-botones-medios: yellow;
-    --color-botones-fuertes: red;
+    --color-botones-debiles: rgb(0, 0, 202);
+    --color-botones-medios: rgb(206, 206, 0);
+    --color-botones-fuertes: rgb(190, 0, 0);
+    --color-botones-letra: black;
 }
 .golpe-debil{
     width: 7.5rem;
@@ -177,7 +178,7 @@ nav a:hover{
     width: 100%;
     height: 100%;
     content: "L";
-    color: black;
+    color: var(--color-botones-letra);
     font-size: 3rem;
     font-weight: bold;
     background-color: ;
@@ -206,7 +207,7 @@ nav a:hover{
     width: 100%;
     height: 100%;
     content: "M";
-    color: black;
+    color: var(--color-botones-letra);
     font-size: 3rem;
     font-weight: bold;
     background-color: var(--color-botones-medios);
@@ -235,7 +236,7 @@ nav a:hover{
     width: 100%;
     height: 100%;
     content: "H";
-    color: black;
+    color: var(--color-botones-letra);
     font-size: 3rem;
     font-weight: bold;
     background-color: var(--color-botones-fuertes);
@@ -264,6 +265,7 @@ nav a:hover{
     width: 100%;
     height: 100%;
     content: "L";
+    color: var(--color-botones-letra);
     font-size: 3rem;
     font-weight: bold;
     background-color: var(--color-botones-debiles);
@@ -292,6 +294,7 @@ nav a:hover{
     width: 100%;
     height: 100%;
     content: "M";
+    color: var(--color-botones-letra);
     font-size: 3rem;
     font-weight: bold;
     background-color: var(--color-botones-medios);
@@ -320,6 +323,7 @@ nav a:hover{
     width: 100%;
     height: 100%;
     content: "H";
+    color: var(--color-botones-letra);
     font-size: 3rem;
     font-weight: bold;
     background-color: var(--color-botones-fuertes);
