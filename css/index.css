@@ -155,10 +155,13 @@ nav a:hover{
     --color-botones-medios: rgb(206, 206, 0);
     --color-botones-fuertes: rgb(190, 0, 0);
     --color-botones-letra: black;
+    --ancho-botones: 5.625rem;
+    --alto-botones: 2.8125rem;
+    --fontsize-botones: 2.25rem;
 }
 .golpe-debil{
-    width: 7.5rem;
-    height: 3.75rem;
+    width: var(--ancho-botones);
+    height: var(--alto-botones);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,15 +182,15 @@ nav a:hover{
     height: 100%;
     content: "L";
     color: var(--color-botones-letra);
-    font-size: 3rem;
+    font-size: var(--fontsize-botones);
     font-weight: bold;
     background-color: ;
     text-align: center;
     border-radius: 35%;
 }
 .golpe-medio{
-    width: 7.5rem;
-    height: 3.75rem;
+    width: var(--ancho-botones);
+    height: var(--alto-botones);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,15 +211,15 @@ nav a:hover{
     height: 100%;
     content: "M";
     color: var(--color-botones-letra);
-    font-size: 3rem;
+    font-size: var(--fontsize-botones);
     font-weight: bold;
     background-color: var(--color-botones-medios);
     text-align: center;
     border-radius: 35%;
 }
 .golpe-fuerte{
-    width: 7.5rem;
-    height: 3.75rem;
+    width: var(--ancho-botones);
+    height: var(--alto-botones);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -237,15 +240,15 @@ nav a:hover{
     height: 100%;
     content: "H";
     color: var(--color-botones-letra);
-    font-size: 3rem;
+    font-size: var(--fontsize-botones);
     font-weight: bold;
     background-color: var(--color-botones-fuertes);
     text-align: center;
     border-radius: 35%;
 }
 .patada-debil{
-    width: 7.5rem;
-    height: 3.75rem;
+    width: var(--ancho-botones);
+    height: var(--alto-botones);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -266,15 +269,15 @@ nav a:hover{
     height: 100%;
     content: "L";
     color: var(--color-botones-letra);
-    font-size: 3rem;
+    font-size: var(--fontsize-botones);
     font-weight: bold;
     background-color: var(--color-botones-debiles);
     text-align: center;
     border-radius: 35%;
 }
 .patada-media{
-    width: 7.5rem;
-    height: 3.75rem;
+    width: var(--ancho-botones);
+    height: var(--alto-botones);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -295,15 +298,15 @@ nav a:hover{
     height: 100%;
     content: "M";
     color: var(--color-botones-letra);
-    font-size: 3rem;
+    font-size: var(--fontsize-botones);
     font-weight: bold;
     background-color: var(--color-botones-medios);
     text-align: center;
     border-radius: 35%;
 }
 .patada-fuerte{
-    width: 7.5rem;
-    height: 3.75rem;
+    width: var(--ancho-botones);
+    height: var(--alto-botones);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -324,7 +327,7 @@ nav a:hover{
     height: 100%;
     content: "H";
     color: var(--color-botones-letra);
-    font-size: 3rem;
+    font-size: var(--fontsize-botones);
     font-weight: bold;
     background-color: var(--color-botones-fuertes);
     text-align: center;
@@ -342,7 +345,7 @@ nav a:hover{
     background-color: whitesmoke;
 }
 .portrait{
-    height: 21rem;
+    height: 15.75rem;
     background: url("../img/icon/command-buttons/movelist-juri.jpg") no-repeat;
     background-size: cover;
     display: flex;
@@ -351,8 +354,8 @@ nav a:hover{
 }
 .portrait h2{
     color: white;
-    font-size: 5rem;
-    padding: 1rem;
+    font-size: 3.75rem;
+    padding: 0.75rem;
 }
 .movelist-entero{
     display: flex;
@@ -361,7 +364,7 @@ nav a:hover{
     width: 100%;
 }
 .tipo-movimiento h2{
-    font-size: 2.5rem;
+    font-size: 1.875rem;
     text-align: center;
     background-color: gray;
     color: white;
@@ -378,7 +381,7 @@ nav a:hover{
 .movimiento-y-comandos{
     display: flex;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .movimiento{
     width: 33%;
@@ -389,7 +392,7 @@ nav a:hover{
     align-items: center;
 }
 .movimiento img{
-    width: 3.7rem;
+    width: 2.775rem;
 }
 .movimiento h3{
     width: 100%;
@@ -410,6 +413,7 @@ nav a:hover{
 .comandos img{
     display: block;
     background-color: transparent;
+    width: 3.75rem;
 }
 /*---------------RESPONSIVE DESKTOP----------------------*/
 @media (max-width: 1280px){
