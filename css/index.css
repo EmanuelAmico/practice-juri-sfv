@@ -466,9 +466,9 @@ nav a:hover{
         z-index: 1;
     }
 }
-@media (max-width: 450px){
+@media (max-width: 420px){
     .movelist-entero{
-        background-color: blue;
+        background-color: red;
     }
 }
 
