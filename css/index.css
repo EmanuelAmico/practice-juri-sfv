@@ -104,6 +104,39 @@ nav a:hover{
     position: relative;
     top: var(--top-de-las-secciones);
 }
+/*---------------RESPONSIVE DESKTOP----------------------*/
+@media (max-width: 1280px){
+    :root{
+        --alto-del-navbar: 10vh;
+        --alto-primer-seccion: 90vh;
+        --alto-segunda-seccion: 90vh;
+        --alto-tercer-seccion: 90vh;
+        --alto-cuarta-seccion: 90vh;
+        --alto-quinta-seccion: 90vh;
+        --top-de-las-secciones: 10vh;
+    }
+    /*Pagina en blanco para diseño de botones*/
+    .pagina-blanca{
+        height: 90vh;
+        position: relative;
+        top: 10vh;
+        background-color: gainsboro;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+/*----------------RESPONSIVE MOBILE------------------*/
+@media (max-width: 680px){
+    nav{
+        flex-wrap: wrap;
+    }
+    .pagina-blanca{
+        justify-content: flex-end;
+    }  
+}
+/* Poner flex wrap al nav en el mobile en el responsive*/
 /*--------------------PRIMERA SECCIÓN------------------------*/
 .rectangulo-logo{
     background-image: url("../img/svg/rectangulo-triangulo-logo.svg");
@@ -359,6 +392,7 @@ nav a:hover{
 }
 .movelist-entero{
     display: flex;
+    
 }
 .tipo-movimiento{
     width: 100%;
@@ -421,38 +455,19 @@ nav a:hover{
     width: 3.75rem;
 }
 /*---------------RESPONSIVE DESKTOP----------------------*/
-@media (max-width: 1280px){
-    :root{
-        --alto-del-navbar: 10vh;
-        --alto-primer-seccion: 90vh;
-        --alto-segunda-seccion: 90vh;
-        --alto-tercer-seccion: 90vh;
-        --alto-cuarta-seccion: 90vh;
-        --alto-quinta-seccion: 90vh;
-        --top-de-las-secciones: 10vh;
-    }
-    /*Pagina en blanco para diseño de botones*/
-    .pagina-blanca{
-        height: 90vh;
-        position: relative;
-        top: 10vh;
-        background-color: gainsboro;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
-}
-/*----------------RESPONSIVE MOBILE------------------*/
-@media (max-width: 680px){
-    nav{
+@media (max-width: 1400px){
+    .movelist-entero{
         flex-wrap: wrap;
     }
-    .pagina-blanca{
-        justify-content: flex-end;
-    }  
+    /*Por defecto todos los navigation tienen un z index igual,
+    por lo que si el contenido supera el navigation el navigation
+    que le sigue lo va a tapar*/
+    .navigation3{
+        z-index: 1;
+    }
 }
-/* Poner flex wrap al nav en el mobile en el responsive*/
+
+
 
 
 
