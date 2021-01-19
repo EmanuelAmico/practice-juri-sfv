@@ -466,6 +466,11 @@ nav a:hover{
         z-index: 1;
     }
 }
+@media (max-width: 480px){
+    body{
+        background-color: magenta;
+    }
+}
 
 
 
