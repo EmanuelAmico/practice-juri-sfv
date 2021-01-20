@@ -466,12 +466,15 @@ nav a:hover{
         z-index: 1;
     }
 }
-@media (max-width: 420px){
+@media (max-width: 425px){
     .movelist-entero{
-        background-color: red;
+        background-color: black;
     }
     .comandos{
         background-color: mediumturquoise;
+    }
+    .movimiento{
+        background-color: green;
     }
 }
 
