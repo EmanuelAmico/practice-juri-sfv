@@ -470,6 +470,9 @@ nav a:hover{
     .movelist-entero{
         background-color: red;
     }
+    .comandos{
+        background-color: mediumturquoise;
+    }
 }
 
 
